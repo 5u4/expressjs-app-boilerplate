@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "🚀 A \"Laravel like\" express.js app skeleton",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/senhungwong/expressjs-app-structure.git"
+  },
+  "author": "Senhung Wong <0x53656e@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/senhungwong/expressjs-app-structure/issues"
+  },
+  "homepage": "https://github.com/senhungwong/expressjs-app-structure#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "express-validation": "^1.0.2",
+    "joi": "^13.4.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.9.0"
+  }
+}
