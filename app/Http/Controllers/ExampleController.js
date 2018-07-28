@@ -40,8 +40,8 @@ const validatorExample = async (req, res) => {
  * @param {*} next 
  */
 const exceptionExample = async (req, res, next) => {
-    const InternalServerError = require('../../Exceptions/HttpExceptions/InternalServerErrorHttpException');
-    return next(new InternalServerError('Test internal server error'));
+    const HttpExceptions = require('@senhung/http-exceptions');
+    return next(new HttpExceptions.NotImplementedHttpException('This method is not implemented yet'));
 };
 
 /**
