@@ -56,10 +56,27 @@ const exampleServiceUse = async (req, res) => {
     res.send(await ExampleService.welcome());
 };
 
+/**
+ * Create a user
+ * 
+ * @param {*} req 
+ * @param {*} res 
+ */
+const createUser = async (req, res) => {
+    const user = new User({
+        username: req.body.username,
+    });
+
+    await user.save();
+
+    res.status(201).json(user);
+}
+
 module.exports = {
     webRenderingExample,
     middlewareExample,
     validatorExample,
     exceptionExample,
     exampleServiceUse,
+    createUser,
 };

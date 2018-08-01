@@ -3,6 +3,9 @@ const bodyParser = require('body-parser');
 const morgan     = require('morgan');
 const Handler    = require('../app/Exceptions/Handler');
 
+/* connect to database */
+require('../database/connection');
+
 /* create express app */
 const app = express();
 
