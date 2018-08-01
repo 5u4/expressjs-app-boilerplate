@@ -4,7 +4,7 @@
   "description": "🚀 A \"Laravel like\" express.js app skeleton",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha tests --recursive"
   },
   "repository": {
     "type": "git",
@@ -26,6 +26,10 @@
     "mongoose": "^5.2.6"
   },
   "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "faker": "^4.1.0",
+    "mocha": "^5.2.0",
     "morgan": "^1.9.0"
   }
 }
