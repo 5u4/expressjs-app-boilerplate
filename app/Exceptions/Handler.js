@@ -1,8 +1,8 @@
-const HttpExceptions = require('@senhung/http-exceptions');
+const { HttpException } = require('@senhung/http-exceptions');
 
 const Handler = (err, req, res, next) => {
     /* handle http error exception */
-    if (err instanceof HttpExceptions.HttpException) {
+    if (err instanceof HttpException) {
         return res.status(err.getStatusCode()).json(err.getMessage() ? {message: err.getMessage()} : {});
     }
 

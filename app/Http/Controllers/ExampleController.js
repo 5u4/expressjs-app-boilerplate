@@ -40,8 +40,8 @@ const validatorExample = async (req, res) => {
  * @param {*} next 
  */
 const exceptionExample = async (req, res, next) => {
-    const HttpExceptions = require('@senhung/http-exceptions');
-    return next(new HttpExceptions.NotImplementedHttpException('This method is not implemented yet'));
+    const { NotImplementedHttpException } = require('@senhung/http-exceptions');
+    return next(new NotImplementedHttpException('This method is not implemented yet'));
 };
 
 /**
